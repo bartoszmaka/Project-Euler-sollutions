@@ -1,1 +1,1 @@
-# Project-Euler-sollutions
+# Project-Euler-solutions
