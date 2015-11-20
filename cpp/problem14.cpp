@@ -5,7 +5,7 @@ using namespace std;
 
 int collatz(unsigned int n){
     int len = 1;
-    while(n!=1){
+    while(n != 1){
         len++;
         if(n%2 == 0){
             n = n/2;
@@ -26,10 +26,10 @@ int main()
         result = collatz(i);
 		if(result>max){
 			max = result;
-            cout<<i<<"\t"<<result<<"\t"
-            <<(clock()-begin)/double(CLOCKS_PER_SEC)
-            <<"sec\t"<<endl;
-        }
+			cout<<i<<"\t"<<result<<"\t"
+				<<(clock()-begin)/double(CLOCKS_PER_SEC)
+				<<"sec\t"<<endl;
+        	}
 	}
 
 	cout<<"execution time: "
