@@ -22,17 +22,17 @@ int main()
 	int max = 1;
 	int result = 1;
 
-	for(unsigned int i = 2 ; i<1000000 ; i++){
+    for(unsigned int i = 2 ; i<1000000 ; i++){
         result = collatz(i);
-		if(result>max){
-			max = result;
-			cout<<i<<"\t"<<result<<"\t"
-				<<(clock()-begin)/double(CLOCKS_PER_SEC)
-				<<"sec\t"<<endl;
-        	}
-	}
+        if(result>max){
+            max = result;
+            cout<<i<<"\t"<<result<<"\t"
+                <<(clock()-begin)/double(CLOCKS_PER_SEC)
+                <<"sec\t"<<endl;
+        }
+    }
 
-	cout<<"execution time: "
-	<<(clock()-begin)/double(CLOCKS_PER_SEC)<<"sec"<<endl;
-	return 0;
+    cout<<"execution time: "
+        <<(clock()-begin)/double(CLOCKS_PER_SEC)<<"sec"<<endl;
+    return 0;
 }

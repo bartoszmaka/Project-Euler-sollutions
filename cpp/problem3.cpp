@@ -5,11 +5,11 @@ using namespace std;
 
 bool is_palindrome(int num)
 {
-    stringstream ss;
-    ss << num;
-    string number = ss.str();
+stringstream ss;
+ss << num;
+string number = ss.str();
 
-    for (int i=0; i!=number.size()/2;i++)
+for (int i=0; i!=number.size()/2;i++)
     {
         if (number[i] != number[number.size()-(i+1)])
         {
@@ -19,9 +19,7 @@ bool is_palindrome(int num)
     return true;
 }
 
-int main()
-{
-
+int main(){
     for (int i = 999; i>=900; i--)
     {
         for(int j = 999; j>=900; j--)
@@ -31,7 +29,6 @@ int main()
             {
                 cout<<is_palindrome(number)<<endl;
             }
-
         }
     }
     return 0;
