@@ -18,16 +18,16 @@ int collatz(unsigned int n){
 
 int main()
 {
-	int begin = clock();
-	int max = 1;
-	int result = 1;
+    int begin = clock();
+    int max = 1;
+    int result = 1;
 
     for(unsigned int i = 2 ; i<1000000 ; i++){
-        result = collatz(i);
+       	result = collatz(i);
         if(result>max){
             max = result;
             cout<<i<<"\t"<<result<<"\t"
-                <<(clock()-begin)/double(CLOCKS_PER_SEC)
+               	<<(clock()-begin)/double(CLOCKS_PER_SEC)
                 <<"sec\t"<<endl;
         }
     }
