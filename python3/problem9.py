@@ -8,12 +8,3 @@ for a in range (1,1000):
 		if a+b+c == 1000:
 			print(a,b,c,'=>', a*b*c)
 
-
-
-#dla a 1..1000
-#	dla b 1..1000
-#		c^2 = a^2+b^2, c = sqrt(c^2)
-#			if a+b+c == 1000
-#				wypisz a,b,c
-#
-#
